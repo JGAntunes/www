@@ -19,5 +19,8 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/JGAntunes/www/issues"
+  },
+  "dependencies": {
+    "hapi": "~6.2.2"
   }
 }
