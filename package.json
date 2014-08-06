@@ -21,6 +21,7 @@
     "url": "https://github.com/JGAntunes/www/issues"
   },
   "dependencies": {
+    "handlebars": "^2.0.0-alpha.4",
     "hapi": "~6.2.2"
   }
 }
