@@ -21,8 +21,9 @@
     "tests"
   ],
   "dependencies": {
-    "ink": "~1.0.5",
     "angular-latest": "~1.2.21",
-    "jquery": "~2.1.1"
+    "jquery": "~2.1.1",
+    "font-awesome": "~4.1.0",
+    "Ink": "~3.0.5"
   }
 }
