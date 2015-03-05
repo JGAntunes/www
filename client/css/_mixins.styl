@@ -4,9 +4,14 @@ helv()
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif
 
 shadow($color, $x, $y, $blur)
-  -webkit-box-shadow: color $x $y $blur
+  -webkit-box-shadow: $color $x $y $blur
   -moz-box-shadow: $color $x $y $blur
   box-shadow: $color $x $y $blur
+  
+shadowBothSides($color, $x, $y, $x2, $y2, $blur)
+  -webkit-box-shadow: $color $x $y $blur, $color $x2 $y2 $blur 
+  -moz-box-shadow: $color $x $y $blur, $color $x2 $y2 $blur
+  box-shadow: $color $x $y $blur, $color $x2 $y2 $blur
 
 innerShadow($color, $x, $y, $blur)
   -moz-box-shadow: inset $color $x $y $blur

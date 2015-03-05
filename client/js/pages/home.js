@@ -1,5 +1,6 @@
 var PageView = require('./base');
 var templates = require('../templates');
+var browsernizr = require('browsernizr');
 
 module.exports = PageView.extend({
   pageTitle: 'Home',
@@ -17,9 +18,15 @@ module.exports = PageView.extend({
   },
   initialize: function(){
     var self = this;
+    if(browsernizr.touch){
+      alert('Touch Screen');
+    }
+    else{
+      alert('No Touch Screen');
+    }
     window.setInterval(function(){
       self.movement.apply(self);
-    }, 50);
+    }, 100);
   },
   movement: function(){
   	var self = this;

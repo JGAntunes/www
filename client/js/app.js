@@ -1,4 +1,5 @@
 /*global app*/
+require('browsernizr/test/touchevents');
 var log = require('bows')('app')
 var config = require('clientconfig')
 var domReady = require('domready')
