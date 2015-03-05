@@ -1,0 +1,16 @@
+.cursor {
+  display: inline-block;
+  border-right: 0.6em solid $info-boxes
+  min-width: 1em
+  min-height: 1em
+
+  -webkit-animation: blink 1s step-end 0s infinite
+  -moz-animation: blink 1s step-end 0s infinite
+  -ms-animation: blink 1s step-end 0s infinite
+  -o-animation: blink 1s step-end 0s infinite
+}
+
+@keyframes blink {
+    from, to { border-color: transparent }
+    50% { border-color: $info-boxes }
+}

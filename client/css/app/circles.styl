@@ -1,0 +1,49 @@
+.circle-info
+	transition(all, 0.3s, ease-in-out, 0s)
+
+.circle-info.dev
+	font-family: Courier
+	
+.circle-info.no-opacity
+	opacity: 0
+	transition(all, 0.3s, ease-in-out, 0s)
+
+.circle-info
+	>span
+		color: white
+		border-radius: 3px
+		padding: 4px
+		background: $info-boxes
+	
+
+.circle
+	border-radius: 50%
+	background: $faint-red
+	width: 100px
+	height: 100px
+	border: 1.5px solid $soft-black-border
+	position: absolute
+	shadow(#ddd, 2.5px, 2.5px, 5px)
+	transition(all, 0.3s, ease-out, 0s)
+	
+	>i
+		vertical-align: middle
+		font-size: 45px
+		color: white
+	
+.circle:hover
+	top: 0px
+	left: 0px
+	background: $faint-dark-red
+	margin-left: -10px
+	margin-top: -10px
+	height: 120px
+	width: 120px
+
+.circle-container
+	position: relative
+	width: 100px
+	height: 100px
+
+	>a
+		text-decoration: none
