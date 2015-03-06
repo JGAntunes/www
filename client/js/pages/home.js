@@ -2,7 +2,7 @@ var PageView = require('./base');
 var templates = require('../templates');
 
 module.exports = PageView.extend({
-  pageTitle: 'Home',
+  pageTitle: 'João Antunes',
   template: templates.pages.home,
   positionX: 0,
   positionY: 0,
