@@ -5,7 +5,7 @@ section.page.home
     .all-100
       .column-group.ink-grid.half-bottom-space.medium-half-gutters
         .all-40.medium-30.small-100.tiny-100.align-center
-          img(src="/static/imgs/me.jpg").main-photo
+          img(src='/static/imgs/me.jpg').main-photo
         .all-60.medium-70.small-100.tiny-100
           p
             | I'm a Computer Science student at IST, music lover, free time developer and hacker, who loves to build and learn.
@@ -13,14 +13,22 @@ section.page.home
             | I'm always in a good mood (even in sleep deprivation mode), so if you want to talk or just grab a beer (you pay of course) feel free to contact me!
             | Or, if you prefer, you may learn more about me wondering around this website which I made with <3 for you.
           p Oh, one other thing, I'm also <b>looking for a job</b> so, if your looking for a developer/cool guy and you think I'm skilled enough, say something!
-          a.social-icon(target='_blank' href='//github.com/jgantunes')
-            i.social-icon.fa.fa-github
-          a.social-icon(target='_blank' href='//twitter.com/jgantunes')
-            i.social-icon.fa.fa-twitter
-          a.social-icon(target='_blank' href='//linkedin.com/in/jgantunes')
-            i.social-icon.fa.fa-linkedin
-          a.social-icon(target='_blank' href='//soundcloud.com/antunes-musica')
-            i.social-icon.fa.fa-soundcloud
+          a.social-icon.big(target='_blank' href='//github.com/jgantunes')
+            i.social-icon.big.fa.fa-github
+          a.social-icon.big(target='_blank' href='//twitter.com/jgantunes')
+            i.social-icon.big.fa.fa-twitter
+          a.social-icon.big(target='_blank' href='//linkedin.com/in/jgantunes')
+            i.social-icon.big.fa.fa-linkedin
+          a.social-icon.big(target='_blank' href='//soundcloud.com/antunes-musica')
+            i.social-icon.big.fa.fa-soundcloud
+          .contacts.quarter-left-space.quarter-right-space
+            a(href='mailto:info@joaoantunes.me')
+              i.social-icon.fa.fa-envelope.quarter-right-space
+              | info@joaoantunes.me
+            br
+            a(href='#')
+              i.social-icon.fa.fa-phone.quarter-right-space
+              | +351912085443
     .all-100.top-space
       h2.cursor _>$ About me? 
     .all-100.bottom-space
@@ -46,13 +54,13 @@ section.page.home
         .all-20.small-50.tiny-50
           .circle-container.push-center.bottom-space
             a.circle.align-center.ink-flex.ink-smooth-scroll(href='#sinfo')
-              img(src="/static/imgs/sinfo-logo-white.png").logo.push-middle.push-center
+              img(src='/static/imgs/sinfo-logo-white.png').logo.push-middle.push-center
           .info-box.sinfo.no-opacity
             span Dev Team @ SINFO
         .all-20.small-50.tiny-50
           .circle-container.push-center.bottom-space
             a.circle.align-center.ink-flex.ink-smooth-scroll(href='#scouts')
-              img(src="/static/imgs/scouts-logo-white.png").logo.push-middle.push-center
+              img(src='/static/imgs/scouts-logo-white.png').logo.push-middle.push-center
           .info-box.scouts.no-opacity
             span Scout for 12 years
   .ink-grid.section#music
@@ -60,7 +68,7 @@ section.page.home
       h2.cursor _>$ Musician
     .all-100
       .column-group.ink-grid.half-bottom-space.medium-half-gutters
-        .all-60.medium-70.small-100.tiny-100
+        .all-60.medium-100.small-100.tiny-100
           p
             | I love music in all its forms and shapes. From alternative, to electronic, to world music, I just love it! I've been playing guitar since I was 16 years old and I 
             | also compose, record and produce (or at least try) my music. I'm self taught in all of these (I know, <i>cliché</i> right?). If your curious about my work 
@@ -88,8 +96,9 @@ section.page.home
             .info-box.quarter-space
               span Sound processing
 
-        .all-40.medium-30.small-100.tiny-100.align-center
-          img(src="/static/imgs/music.png").standard-photo.quarter-top-space.quarter-bottom-space
+        .all-40.medium-100.small-100.tiny-100.align-center
+          iframe(scrolling='no' frameborder='no' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/9324940&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false').standard-photo.half-space
+          img(src='/static/imgs/music.png').standard-photo.half-top-space.half-bottom-space.push-center
   .ink-grid.section#student
     .all-100.top-space
       h2.cursor _>$ CS Student @ IST
@@ -128,8 +137,8 @@ section.page.home
               span Operating Systems
 
         .all-40.medium-30.small-100.tiny-100.align-center
-          img(src="/static/imgs/student.png").quarter-top-space.quarter-bottom-space
-          img(src="/static/imgs/arkanoid.jpg").standard-photo.quarter-top-space.quarter-bottom-space
+          img(src='/static/imgs/student.png').half-top-space.half-bottom-space
+          img(src='/static/imgs/arkanoid.jpg').standard-photo.half-top-space.half-bottom-space
   .ink-grid.section#dev
     .all-100.top-space
       h2.cursor _>$ Developer
@@ -196,6 +205,10 @@ section.page.home
             .info-box.quarter-space
               span npm
             .info-box.quarter-space
+              span git
+            .info-box.quarter-space
+              span GitHub
+            .info-box.quarter-space
               span Linux
             .info-box.quarter-space
               span Ink
@@ -230,8 +243,8 @@ section.page.home
               span Programming
 
         .all-40.medium-30.small-100.tiny-100.align-center
-          img(src="/static/imgs/sinfo-logo-normal.png").quarter-top-space.quarter-bottom-space
-          img(src="/static/imgs/sinfo22.jpg").standard-photo.quarter-top-space.quarter-bottom-space
+          img(src='/static/imgs/sinfo-logo-normal.png').half-top-space.half-bottom-space
+          img(src='/static/imgs/sinfo22.jpg').standard-photo.half-top-space.half-bottom-space
   .ink-grid.section#scouts
     .all-100.top-space
       h2.cursor _>$ Scout
@@ -240,7 +253,7 @@ section.page.home
         .all-60.medium-70.small-100.tiny-100
           p
             | I've been a member of the <a href='//escoteiros.pt'>Portuguese Scout Association (AEP)</a> since 2003 and during this last 12 years I've abeen responsible for various small groups (scout troops) being through the most diversified situations (survival and orienteering challenges, numerous hikes, etc.) where our organization and team work
-            | were key parts towards achieving our goals as a group. I've developed skills in the orienteering field, leadership, camp cooking, knots, first aid procedures and (my personal favorite) in the "feel good" field!
+            | were key parts towards achieving our goals as a group. I've developed skills in the orienteering field, leadership, camp cooking, knots, first aid procedures and (my personal favorite) in the 'feel good' field!
             br
             | I'm a scout chief since 2012 being partially for my scout group (helping managing it) and also for a group of children aged 7-10.
           .align-center
@@ -266,8 +279,8 @@ section.page.home
               span Survival
 
         .all-40.medium-30.small-100.tiny-100.align-center
-          img(src="/static/imgs/scouts-pt-logo.png").quarter-top-space.quarter-bottom-space
-          img(src="/static/imgs/scout.jpg").standard-photo.quarter-top-space.quarter-bottom-space
+          img(src='/static/imgs/scouts-pt-logo.png').half-top-space.half-bottom-space
+          img(src='/static/imgs/scout.jpg').standard-photo.half-top-space.half-bottom-space
   .ink-grid.section#footer
     .all-100
       p.align-center Built with <3 using <a href='//ampersandjs.com'>AmpersandJS</a> & <a href='//http://ink.sapo.pt'>Ink</a>
