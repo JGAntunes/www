@@ -1,14 +1,15 @@
 var PageView = require('./base');
 var templates = require('../templates');
-var browsernizr = require('browsernizr');
 
 module.exports = PageView.extend({
   pageTitle: 'Home',
   template: templates.pages.home,
   positionX: 0,
   positionY: 0,
-  moveX: 0.15,
-  moveY: 0.15,
+  randX: Math.random(),
+  randY: Math.random(),
+  moveX: 0.25,
+  moveY: 0.25,
   maxMove: 10,
   velocity: 0.35,
   minVelocity: 0.25,
@@ -18,12 +19,6 @@ module.exports = PageView.extend({
   },
   initialize: function(){
     var self = this;
-    if(browsernizr.touch){
-      alert('Touch Screen');
-    }
-    else{
-      alert('No Touch Screen');
-    }
     window.setInterval(function(){
       self.movement.apply(self);
     }, 100);
@@ -33,10 +28,10 @@ module.exports = PageView.extend({
   	var els = self.queryAll('.circle');
   	for (var i = 0; i < els.length; ++i) {
       var item = els[i];
-      self.moveX = self.positionX >= self.maxMove ? - Math.random() * (self.velocity + self.minVelocity) - self.minVelocity : self.moveX;
-      self.moveX = self.positionX <= -self.maxMove ? Math.random() * (self.velocity - self.minVelocity) + self.minVelocity : self.moveX;
-      self.moveY = self.positionY >= self.maxMove ? - Math.random() * (self.velocity + self.minVelocity) - self.minVelocity : self.moveY;
-      self.moveY = self.positionY <= -self.maxMove ? Math.random() * (self.velocity - self.minVelocity) + self.minVelocity : self.moveY;
+      self.moveX = self.positionX >= self.maxMove ? - self.randX * (self.velocity + self.minVelocity) - self.minVelocity : self.moveX;
+      self.moveX = self.positionX <= -self.maxMove ? self.randX * (self.velocity - self.minVelocity) + self.minVelocity : self.moveX;
+      self.moveY = self.positionY >= self.maxMove ? - self.randY * (self.velocity + self.minVelocity) - self.minVelocity : self.moveY;
+      self.moveY = self.positionY <= -self.maxMove ? self.randY * (self.velocity - self.minVelocity) + self.minVelocity : self.moveY;
       self.positionX += self.moveX;
       self.positionY += self.moveY;
       item.style.left = self.positionX + 'px';
