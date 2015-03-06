@@ -7,8 +7,12 @@ section.page.home
         .all-40.medium-30.small-100.tiny-100.align-center
           img(src="/static/imgs/me.jpg").main-photo
         .all-60.medium-70.small-100.tiny-100
-          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima facilis autem eos molestias possimus architecto est sapiente nam illum dolore ducimus laboriosam, vero error et odio blanditiis consequatur quis maxime!
-          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima facilis autem eos molestias possimus architecto est sapiente nam illum dolore ducimus laboriosam, vero error et odio blanditiis consequatur quis maxime!
+          p
+            | I'm a Computer Science student at IST, music lover, free time developer and hacker, who loves to build and learn.
+            br
+            | I'm always in a good mood (even in sleep deprivation mode), so if you want to talk or just grab a beer (you pay of course) feel free to contact me!
+            | Or, if you prefer, you may learn more about me wondering around this website which I made with <3 for you.
+          p Oh, one other thing, I'm also <b>looking for a job</b> so, if your looking for a developer/cool guy and you think I'm skilled enough, say something!
           a.social-icon(target='_blank' href='//github.com/jgantunes')
             i.social-icon.fa.fa-github
           a.social-icon(target='_blank' href='//twitter.com/jgantunes')
@@ -17,41 +21,251 @@ section.page.home
             i.social-icon.fa.fa-linkedin
           a.social-icon(target='_blank' href='//soundcloud.com/antunes-musica')
             i.social-icon.fa.fa-soundcloud
-    .all-100
+    .all-100.top-space
       h2.cursor _>$ About me? 
     .all-100.bottom-space
       .column-group.align-center
         .all-20.small-50.tiny-50
           .circle-container.push-center.bottom-space
-            a.circle.align-center.ink-flex
+            a.circle.align-center.ink-flex.ink-smooth-scroll(href='#music')
               i.fa.fa-music.push-middle.push-center
-          .circle-info.music.no-opacity
+          .info-box.music.no-opacity
             span Musician
         .all-20.small-50.tiny-50
           .circle-container.push-center.bottom-space
-            a.circle.align-center.ink-flex
-              i.fa.fa-code.push-middle.push-center
-          .circle-info.dev.no-opacity
-            span Developer & Hacker
-        .all-20.small-50.tiny-50
-          .circle-container.push-center.bottom-space
-            a.circle.align-center.ink-flex
+            a.circle.align-center.ink-flex.ink-smooth-scroll(href='#student')
               i.fa.fa-graduation-cap.push-middle.push-center
-          .circle-info.student.no-opacity
+          .info-box.student.no-opacity
             span CS Student @ IST
         .all-20.small-50.tiny-50
           .circle-container.push-center.bottom-space
-            a.circle.align-center.ink-flex
+            a.circle.align-center.ink-flex.ink-smooth-scroll(href='#dev')
+              i.fa.fa-code.push-middle.push-center
+          .info-box.dev.no-opacity
+            span Developer & Hacker
+        .all-20.small-50.tiny-50
+          .circle-container.push-center.bottom-space
+            a.circle.align-center.ink-flex.ink-smooth-scroll(href='#sinfo')
               img(src="/static/imgs/sinfo-logo-white.png").logo.push-middle.push-center
-          .circle-info.sinfo.no-opacity
+          .info-box.sinfo.no-opacity
             span Dev Team @ SINFO
         .all-20.small-50.tiny-50
           .circle-container.push-center.bottom-space
-            a.circle.align-center.ink-flex
+            a.circle.align-center.ink-flex.ink-smooth-scroll(href='#scouts')
               img(src="/static/imgs/scouts-logo-white.png").logo.push-middle.push-center
-          .circle-info.scouts.no-opacity
-            span Scout for 11 years
+          .info-box.scouts.no-opacity
+            span Scout for 12 years
   .ink-grid.section#music
     .all-100.top-space
-      h2.cursor _>$ Some topic
-      div  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis vero ipsum nisi eius odio, natus ullam provident pariatur temporibus quia eos repellat consequuntur perferendis enim, amet quae quasi repudiandae. Dolore!
+      h2.cursor _>$ Musician
+    .all-100
+      .column-group.ink-grid.half-bottom-space.medium-half-gutters
+        .all-60.medium-70.small-100.tiny-100
+          p
+            | I love music in all its forms and shapes. From alternative, to electronic, to world music, I just love it! I've been playing guitar since I was 16 years old and I 
+            | also compose, record and produce (or at least try) my music. I'm self taught in all of these (I know, <i>cliché</i> right?). If your curious about my work 
+            | <b><a href='//soundcloud.com/antunes-musica'>check out my SoundCloud</a></b>.
+          p
+            | As an engineer, I'm also a big fan of DYI so, as soon as I could, I've started to figure out how everything works and have been hacking musical instruments ever since.
+            | My current project on this field (besides my dream of building my own guitar) is a tuner built with an Arduino (it's still under development waiting for some free time).
+          .align-center
+            .info-box.quarter-space
+              span Composing
+            .info-box.quarter-space
+              span Producing
+            .info-box.quarter-space
+              span Recording
+            .info-box.quarter-space
+              span Guitar
+            .info-box.quarter-space
+              span Bass
+            .info-box.quarter-space
+              span Cubase SX3
+            .info-box.quarter-space
+              span Music DYI
+            .info-box.quarter-space
+              span Electronics
+            .info-box.quarter-space
+              span Sound processing
+
+        .all-40.medium-30.small-100.tiny-100.align-center
+          img(src="/static/imgs/music.png").standard-photo.quarter-top-space.quarter-bottom-space
+  .ink-grid.section#student
+    .all-100.top-space
+      h2.cursor _>$ CS Student @ IST
+    .all-100
+      .column-group.ink-grid.half-bottom-space.medium-half-gutters
+        .all-60.medium-70.small-100.tiny-100
+          p
+            | I'm currently in the third year of my Bachelor Degree in Computer Science (<i>Engenharia Informática e Computadores</i>) at <a href='//ist.utl.pt'>Técnico Lisboa</a>. I've always been into science
+            | (specially physics and math) and, during secondary school, I realised I wanted to be an engineer. As soon as I started to code I knew I had to be in a Computer Science course
+            | and what's the best place to be than in one of the best engineering schools in Portugal?
+          p
+            | Some of the projects I've developed to my classes include a 3D Arkanoid game using OpenGL and C++, a distributed file server system using Java and TCP/UDP sockets, a fill-a-pix puzzle solver in CLisp,
+            | a series of C graph searching algorithms, a highly concurrent content server in C using POSIX mutexes and semaphores and many, many other projects.
+          p
+            | I've hosted a lot of this <b><a href='//github.com/JGAntunes'>projects on GitHub</a></b>. So check them out.
+          .align-center
+            .info-box.quarter-space
+              span Python
+            .info-box.quarter-space
+              span C
+            .info-box.quarter-space
+              span C++
+            .info-box.quarter-space
+              span Java
+            .info-box.quarter-space
+              span SQL
+            .info-box.quarter-space
+              span Algorithms & algorithm analysis
+            .info-box.quarter-space
+              span Computer Networks
+            .info-box.quarter-space
+              span AI
+            .info-box.quarter-space
+              span OOP
+            .info-box.quarter-space
+              span Operating Systems
+
+        .all-40.medium-30.small-100.tiny-100.align-center
+          img(src="/static/imgs/student.png").quarter-top-space.quarter-bottom-space
+          img(src="/static/imgs/arkanoid.jpg").standard-photo.quarter-top-space.quarter-bottom-space
+  .ink-grid.section#dev
+    .all-100.top-space
+      h2.cursor _>$ Developer
+    .all-100
+      .column-group.ink-grid.half-bottom-space.medium-half-gutters
+        .all-100
+          p
+            | I'm always developing stuff in my free time and since I've discovered GitHub my account hasn't had much rest yet.
+          p
+            | I love Open-Source and Javascript and some of the projects I've worked include:
+          ul
+            li An image processing tool that extracted RGB values and detected motion in videos (using OpenCV and Java).
+            li A series of small Arduino projects around sound processing.
+            li <a href='http://ampersandjs.com/contribute'>Contributor</a> to the <a href='//ampersandjs.com'>AmpersandJS</a> core modules.
+            li A series of modules for <a href='//ampersandjs.com'>AmpersandJS</a> which include:
+              ul
+                li <a href='//github.com/sinfo/ampersand-io'>ampersand-io</a> (a <a href='//socket.io'>socket.io</a> wrapper).
+                li <a href='//github.com/sinfo/ampersand-io-model'>ampersand-io-model</a> (an object state model using <a href='//socket.io'>socket.io</a>).
+                li <a href='//github.com/sinfo/ampersand-io-collection'>ampersand-io-collection</a> (a collection of state models using <a href='//socket.io'>socket.io</a>).
+                li <a href='//github.com/sinfo/ampersand-infinite-scroll'>ampersand-infinite-scroll</a> (a view that allows for infinite scroll effect with a paginated collection).
+            li 
+              | <a href='//github.com/sinfo/eventdeck'>EventDeck</a> - a tool for managing events/conferences (from speakers, to sponsors, communications, etc.) built at <a href='//sinfo.org'>SINFO</a> using <a href='//nodejs.org'>NodeJS</a>, <a href='//hapijs.com'>HapiJS</a>,
+              | <a href='//mongodb.org'>MongoDB</a> and <a href='//ampersandjs.com'>AmpersandJS</a>. I've collaborated in all of the stack including support for real time notifications using <a href='//socket.io'>socket.io</a>.
+              br
+              | This tool was used for the <a href='//app.sinfo.org'>SINFO 22nd edition</a> in 2015 supporting +300 speaker profiles, +600 companies/sponsors profiles, +1700 communications and +2500 comments.
+            li 
+              | <a href='//github.com/sinfo/cannon-api'>Cannon Api</a> - a RESTful API to be used during the <a href='//app.sinfo.org'>SINFO  22</a> event, to manage attendees, user accounts, tickets, surveys, file uploads and an achievement system based on qr codes.
+              br
+              | This tool was used for the <a href='//app.sinfo.org'>SINFO  22</a> in 2015 and supporting +900 user accounts.
+            li
+              | <a href='//app.sinfo.org'>SINFO  Webapp</a> - a web application that fully supported the use of the EventDeck public API and Cannon API so that it could present to the attendees at <a href='//sinfo.org'>SINFO</a>  realtime information
+              | on everything at the event.
+              br
+              | This tool was used for the <a href='//app.sinfo.org'>SINFO  22</a> in 2015.
+          p
+            | My contributions also include other pull requests to a series of other projects so, for more info, <b><a href='//github.com/JGAntunes'>check out my GitHub</a></b>.
+          .align-center
+            .info-box.quarter-space
+              span Javascript
+            .info-box.quarter-space
+              span NodeJS
+            .info-box.quarter-space
+              span HapiJS
+            .info-box.quarter-space
+              span AmpersandJS
+            .info-box.quarter-space
+              span AngularJS
+            .info-box.quarter-space
+              span RESTful API
+            .info-box.quarter-space
+              span NoSQL
+            .info-box.quarter-space
+              span MongoDB
+            .info-box.quarter-space
+              span HTML5 & CSS
+            .info-box.quarter-space
+              span Jade
+            .info-box.quarter-space
+              span Stylus
+            .info-box.quarter-space
+              span WebSockets
+            .info-box.quarter-space
+              span Socket.IO
+            .info-box.quarter-space
+              span npm
+            .info-box.quarter-space
+              span Linux
+            .info-box.quarter-space
+              span Ink
+
+  .ink-grid.section#sinfo
+    .all-100.top-space
+      h2.cursor _>$ Dev Team @ SINFO
+    .all-100
+      .column-group.ink-grid.half-bottom-space.medium-half-gutters
+        .all-60.medium-70.small-100.tiny-100
+          p
+            | <a href='//sinfo.org'>SINFO</a> is an annual non profit event organised exclusively by college students in the fields of Information Technology and Computer Science, one of the biggest of its kink in Europe and the biggest in Portugal. I'm part of the team that organized the <a href='//app.sinfo.org'>22nd SINFO</a>
+            | being currently working on the 23rd. 
+            br
+            | I'm on the Development Team, responsible for developing and maintaining our web site, web apps as well as any software/hardware related projects needed to support the event (for more info on these please see my <a href='#dev' class='ink-smooth-scroll'>developer info</a>.
+            | Besides all this, every member as the privilege to directly contact the speakers which he would like to see in the event (big international figures that some how made a mark in the tech world) as well as the companies that we need to support us.
+            | Giving us this way a big boost on our communication skills.
+          .align-center
+            .info-box.quarter-space
+              span Negotiation
+            .info-box.quarter-space
+              span Organization
+            .info-box.quarter-space
+              span Management
+            .info-box.quarter-space
+              span Event organization
+            .info-box.quarter-space
+              span Communication
+            .info-box.quarter-space
+              span Programming
+
+        .all-40.medium-30.small-100.tiny-100.align-center
+          img(src="/static/imgs/sinfo-logo-normal.png").quarter-top-space.quarter-bottom-space
+          img(src="/static/imgs/sinfo22.jpg").standard-photo.quarter-top-space.quarter-bottom-space
+  .ink-grid.section#scouts
+    .all-100.top-space
+      h2.cursor _>$ Scout
+    .all-100
+      .column-group.ink-grid.half-bottom-space.medium-half-gutters
+        .all-60.medium-70.small-100.tiny-100
+          p
+            | I've been a member of the <a href='//escoteiros.pt'>Portuguese Scout Association (AEP)</a> since 2003 and during this last 12 years I've abeen responsible for various small groups (scout troops) being through the most diversified situations (survival and orienteering challenges, numerous hikes, etc.) where our organization and team work
+            | were key parts towards achieving our goals as a group. I've developed skills in the orienteering field, leadership, camp cooking, knots, first aid procedures and (my personal favorite) in the "feel good" field!
+            br
+            | I'm a scout chief since 2012 being partially for my scout group (helping managing it) and also for a group of children aged 7-10.
+          .align-center
+            .info-box.quarter-space
+              span Leadership
+            .info-box.quarter-space
+              span Organization
+            .info-box.quarter-space
+              span Management
+            .info-box.quarter-space
+              span Communication
+            .info-box.quarter-space
+              span Camping
+            .info-box.quarter-space
+              span Knots
+            .info-box.quarter-space
+              span Cooking
+            .info-box.quarter-space
+              span First aid
+            .info-box.quarter-space
+              span Orienteering
+            .info-box.quarter-space
+              span Survival
+
+        .all-40.medium-30.small-100.tiny-100.align-center
+          img(src="/static/imgs/scouts-pt-logo.png").quarter-top-space.quarter-bottom-space
+          img(src="/static/imgs/scout.jpg").standard-photo.quarter-top-space.quarter-bottom-space
+  .ink-grid.section#footer
+    .all-100
+      p.align-center Made with <a href='//ampersandjs.com'>AmpersandJS</a> & <a href='//http://ink.sapo.pt'>Ink</a> with <3

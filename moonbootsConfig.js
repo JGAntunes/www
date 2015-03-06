@@ -29,7 +29,10 @@ module.exports = {
     // These will simply be included before any of your application code in the
     // order you provide them. So for example, if you're using jQuery make sure
     // you list any plugins after jQuery itself.
-    libraries: [],
+    libraries: [
+      jsDir + '/vendor/ink-all.js',
+      jsDir + '/vendor/autoload.js',
+    ],
     // Specify the stylesheets we want to bundle
     stylesheets: [
       cssDir + '/vendor/ink.css',

@@ -39,10 +39,10 @@ module.exports = PageView.extend({
     }
   },
   showInfo: function(event){
-    event.delegateTarget.parentNode.parentNode.querySelector('.circle-info').classList.remove('no-opacity');
+    event.delegateTarget.parentNode.parentNode.querySelector('.info-box').classList.remove('no-opacity');
   },
   hideInfo: function(event){
     console.log('on hide');
-    event.delegateTarget.parentNode.parentNode.querySelector('.circle-info').classList.add('no-opacity');
+    event.delegateTarget.parentNode.parentNode.querySelector('.info-box').classList.add('no-opacity');
   },
 });
