@@ -1,6 +1,4 @@
 // base view for pages
 var View = require('ampersand-view')
 
-module.exports = View.extend({
-
-})
+module.exports = View.extend({})

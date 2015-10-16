@@ -1,42 +1,45 @@
 body
   background-color: #999090
+  // max-width: 1260px
 
 a
   color: $links
 
 @media screen and (min-width: 1260px)
   #presentation
-    margin-top: 10px
-    border-top-left-radius: 10px
-    border-top-right-radius: 10px
+    padding-top: 10px
+    // border-top-left-radius: 10px
+    // border-top-right-radius: 10px
   #footer
-    margin-bottom: 10px
-    border-bottom-left-radius: 10px
-    border-bottom-right-radius: 10px
+    padding-bottom: 10px
+    // border-bottom-left-radius: 10px
+    // border-bottom-right-radius: 10px
 
-.section
-  max-width: 1260px
-  shadowBothSides(#ddd, 2.5px, 2.5px, -2.5px, -2.5px, 5px)
+// .section
+//   max-width: 1260px
+//   shadowBothSides(#ddd, 2.5px, 2.5px, -2.5px, -2.5px, 5px)
 
 h1, h2, h3, h4, h5, h6
   font-family: Courier
-  
+
 iframe
   width: 350px
   height: auto
-  
+
 @media screen and (max-width: 450px)
   iframe
     width: 200px
 
+body
+  font-family: Courier
 
 .logo
   width: 60px
   height: 60px
-  
+
 .main-photo
   border-radius: 50%
-  
+
 .standard-photo
   border-radius: 10px
   shadow(#ddd, 2.5px, 2.5px, 5px)
@@ -44,29 +47,22 @@ iframe
 .main-photo.music
   width: 300px
   height: 300px
-  
+
 .social-icon.big
   font-size: 50px
   margin: 0.1em
-  
+
 .social-icon
   text-decoration: none
   opacity: 0.9
   color: #404040
-  
+
 .contacts
   font-size: 20px
   color: $links
 
 .info-box
   display: inline-block
-  transition(all, 0.3s, ease-in-out, 0s)
-
-.info-box.dev
-  font-family: Courier
-  
-.info-box.no-opacity
-  opacity: 0
   transition(all, 0.3s, ease-in-out, 0s)
 
 .info-box
@@ -76,10 +72,41 @@ iframe
     padding: 4px
     background: $info-boxes
 
+.dev
+  >span
+    background: $info-boxes
+
+.student
+  >span
+    background: $student
+
+.muzzley
+  >span
+    background: $muzzley
+
+.scouts
+  >span
+    background: $scouts
+
+.sinfo
+  >span
+    background: $sinfo
+
+.music
+  >span
+    background: $music
+
 .section
   padding-top: 20px
   background-color: white
   border-bottom: 2px dashed #E5E5E5
-  
+
 #presentation, #student, #sinfo
   background-color: #F4F4F4
+
+a.main-info
+  margin: 20px
+  &:hover
+    >span
+      text-decoration: underline
+      color: white
