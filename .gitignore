@@ -27,5 +27,4 @@ build/Release
 node_modules
 
 
-client/js/templates.js
-client/css/app.css
+public/*.css
