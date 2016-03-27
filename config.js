@@ -1,7 +1,6 @@
 var path = require('path')
-
 var config = {
-  isDev: true,
+  isDev: process.env.NODE_ENV !== 'production',
   isSecure: false
 }
 
