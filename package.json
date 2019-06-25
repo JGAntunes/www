@@ -13,13 +13,9 @@
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",
     "gulp-stylus": "^2.5.0",
-    "hapi": "^13.5.3",
-    "inert": "^3.2.1",
-    "jade": "^1.11.0",
-    "vision": "^4.1.0"
+    "jade": "^1.11.0"
   },
   "devDependencies": {
-    "nodemon": "^1.11.0",
     "snazzy": "^3.0.1",
     "standard": "^2.11.0"
   }
